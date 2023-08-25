@@ -2,18 +2,20 @@
 
 Replication materials for Heft-Neal, Gould, Childs, Kiang, Nadeau, Duggan, Bendavid, and Burke 2023 PNAS paper [`Emergency department visits respond non-linearly to wildfire smoke'](link).
 
-The materials in this repository allow users to reproduce the figures and calculations appearing in the main text and extended data of the paper.
+The materials in this repository includes public data and the scripts used to produce the figures and calculations appearing in the main text and extended data of the paper.
+
+Nonpublic data including all measures of ED visits that are the outcomes for most of the analysis in the paper are not included here. Additional details included below. 
 
 If you find meaningful errors in the code or have questions or suggestions, please contact Sam Heft-Neal at sheftneal@stanford.edu.
 
 ## Organization of repository
 
-* **scripts**: scripts for downloading data and for replication of figures and calculations.
-* **figures/raw**: scripts will generate pdf figures in this directory.
+* **scripts**: scripts for downloading data and for producing figures and calculations.
+* **figures/raw**: pdf figures output by R.
 * **figures/published**: published versions of the figures. Cosmetic editing done in Adobe Illustrator to go from raw -> final versions.
-* **data/inputs**: data inputs for analysis.
-* **data/figure_data**: data used for any figures that don't use the main analysis data. Directory includes pre-processed files with replication materials. Anytime a *dataPrep.R script runs it generates new figure data in files of the same name but ending with "_new" and all subsequent runs of plotting scripts bring in the new data instead of the pre-processed data included with replication materials.
-* **PNAS-ed-smoke_replication.Rproj**: organizes the replication materials into an RStudio Project.
+* **data/inputs**: public data inputs for analysis.
+
+* **PNAS-ed-smoke-replication.Rproj**: organizes the replication materials into an RStudio Project.
 
 
 
@@ -22,7 +24,7 @@ If you find meaningful errors in the code or have questions or suggestions, plea
 ***A couple of notes on replication:***
 
 
-* **A note about replication with HCAI data**: Ideally we would like to provide replication materials for the entire pipeline beginning with the raw individual level ED visit data and ending with the results presented in the paper. However, due to privacy concerns and the HCAI user agreement, we cannot post the individual level data. Instead, we have tried to include sufficiently detailed information so that any researcher with access to HCAI's ED visit dataset could reconstruct our analysis data exactly. If any steps are unclear please contact Sam at sheftneal@stanford.edu. 
+* **A note about replication with HCAI data**: Ideally we would like to provide replication materials for the entire pipeline beginning with the raw individual level ED visit data and ending with the results presented in the paper. However, due to privacy concerns and the HCAI data use agreement, we cannot post the ED visit data. Instead, we have tried to include sufficiently detailed information so that any researcher with access to HCAI's ED visit dataset could reconstruct our analysis data exactly. If any steps are unclear please contact Sam at sheftneal@stanford.edu. 
 
 
 
@@ -34,7 +36,7 @@ The repository is ~XMb (and >XGb if you download all the raw data using script 0
 
 Users can manage replication through the R project "PNAS-ed-smoke_replication.Rproj". Alternatively users can set working directory to PNAS-ed-smoke and run scripts independently.
 
-* **data/inputs/analysis_data.rds** This file includes the final processed data used in the analysis with all location identifying information removed. This file can be used to replicate the results in the paper but because identifying information has been removed, it cannot be used to replicate pre-processing since those steps require linking exposures to individual zipcode-day observations based on location and timing of births.
+* **data/inputs/analysis_data.rds** This file includes the final processed data used in the analysis with all ED visit variables removed. This file can be merged with a processed ED visit dataset (not included, see above) to reproduce the main results.
 
 * **data/inputs/** Includes a combination of empty directories that are populated when running script 00 and directories with pre-processed data that are not used in the main analysis but are used for generating some components of figures.
 
