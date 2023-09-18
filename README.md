@@ -44,21 +44,4 @@ If you find meaningful errors in the code or have questions or suggestions, plea
     3-analysis-sup-figs: scripts for generating supplemental figures and results
 
 
-
-## R packages required
-* **classInt**
-* **data.table**
-* **fields**
-* **RCurl**
-* **fixest**
-* **tidycensus**
-* **areaplot**
-* **viridis**
-* **raster**
-* **sp**
-* **sf**
-* **wesanderson**
-* **MetBrewer**
-* **tidyverse**
-
 Scripts were originally run with R 4.2.3.
