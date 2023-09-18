@@ -261,7 +261,7 @@ source("scripts/00_init.R")
         
                 
                         
-                #count smoke days
+                #count smoke days for panel title
                 spm %>% filter(smokePM_pred>0) %>% mutate(year = lubridate::year(date)) %>% group_by(year,grid_id_10km) %>% summarise(count = n()) %>% ungroup() %>% summarise(ave = mean(count))
                 
                 
