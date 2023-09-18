@@ -1,6 +1,6 @@
 # Emergency department visits respond non-linearly to wildfire smoke
 
-Code and select data for Heft-Neal, Gould, Childs, Kiang, Nadeau, Duggan, Bendavid, and Burke 2023 PNAS paper [`Emergency department visits respond non-linearly to wildfire smoke'](link).
+Code and select data for Heft-Neal, Gould, Childs, Kiang, Nadeau, Duggan, Bendavid, and Burke 2023 PNAS paper [`Emergency department visits respond non-linearly to wildfire smoke'](https://www.pnas.org/doi/10.1073/pnas.2302409120).
 
 The materials in this repository includes public data and the scripts used to produce the figures and calculations appearing in the main text and extended data of the paper.
 
