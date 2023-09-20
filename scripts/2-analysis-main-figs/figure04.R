@@ -125,13 +125,13 @@ col = wes_palette("BottleRocket2")[c(2,1,3)]
         #divide through by group specific base rates (ie by base rate for given level of insurance)
         results[1:5,c("est","lb","ub")] <- results[1:5,c("est","lb","ub")]/brate$ed_symp_rate[3]
         results[6:10,c("est","lb","ub")] <- results[6:10,c("est","lb","ub")]/brate$ed_symp_rate[2]
-        results[11:15,c("est","lb","ub")] <- results[11:15,c("est","lb","ub")]/brate$ed_symp_rate[1]]
+        results[11:15,c("est","lb","ub")] <- results[11:15,c("est","lb","ub")]/brate$ed_symp_rate[1]
         
 
 
 
             
-            pdf(file = "figures/raw/fig5-smallpanels-raw.pdf", width = 5, height = 10)
+            pdf(file = "figures/raw/fig4-symptoms-smallpanels-raw.pdf", width = 5, height = 10)
                     
                     
                     par(mfrow = c(3,1))
