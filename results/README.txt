@@ -23,10 +23,11 @@ And then plot(x, x*deg1 + x^2*deg2 + x^3*deg3 + x^4*deg4)
 fig3-main-panels.rds and fig3-subpanels.rds
 
 Corresponds to estimates in main and sub panels of Figure 3, respectively
+Note: we have already divided through by the base rate so the units are % change (for est, se, lb, ub, etc.)
 
 smokePM_bin = the smoke PM bin the estimates correspond to
-est = point estimate (note we have already divided through by base rate to convert to % change)
-se = standard error according to point estimate (note we have already divided through by base rate to convert to % change)   
+est = point estimate 
+se = standard error according to point estimate 
 brate = base rate
 ub = upper bound 95% confidence interval corrected for multiple comparisons as described in paper
 lb = lower bound 95% confidence interval corrected for multiple comparisons
