@@ -33,3 +33,16 @@ ub = upper bound 95% confidence interval corrected for multiple comparisons as d
 lb = lower bound 95% confidence interval corrected for multiple comparisons
 ub_unadj =  upper bound 95% confidence interval without adjusting for multiple comparisons (not used in paper just included for reference)
 lb_unadj =    lower bound 95% confidence interval without adjusting for multiple comparisons (not used in paper just included for reference)
+
+
+fig4-sub-panels-insurance-heterogeneity.rds
+
+Corresponds to estimates in sub panels of Figure 4. Main panels are the same as panels in Figure 3. Units correspond to Figur 4 in the paper and are % change relative to no smoke.
+
+outcome = The category of ED visits
+type = Least/Moderately/Most Insured
+bin = smoke bin (1 = 0-5, 2 = 5-10, 3 = 10-25, 4 = 25-50, 5 = >50 ugm3-1)
+est = estimate
+se = standard error
+lb = 95% CI lower bound
+ub = 95% CI upper bound
